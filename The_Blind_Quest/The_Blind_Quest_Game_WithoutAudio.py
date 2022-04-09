@@ -2119,7 +2119,7 @@ def Shop_talk(): # my potions are too strong for you
             posible_options.append('back')
             posible_options.append('exit')
         option = input("> ")
-        while option.lower() not in posible_options.lower():
+        while option.lower() not in posible_options:
             print("plese choose and option")
             option = input("> ")
         Clear_Screen()

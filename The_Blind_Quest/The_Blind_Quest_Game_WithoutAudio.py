@@ -4994,7 +4994,7 @@ def Boss_Selection():
     else:
         enemy.maxhp += enemy.level * 12
         enemy.p += enemy.level * 2
-        if enemy.name != "Egpr":
+        if enemy.name != "Dynomite":
             enemy.exp += enemy.level * 2
 # slect the boss dialog
 def Boss_Encounter():

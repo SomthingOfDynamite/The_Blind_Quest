@@ -1642,7 +1642,7 @@ def Player_Move(myAction):
     print("(Type the name of the location to teleport)")
     print(f"(You have {player1.tel} Teleport potions left)\n")
     print(f"(You can also select \"back\" if you do not wish to move)")
-    possible_optiions = ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8', 'c1', 'c2', 'c3','c4', 'c5', 'c6', 'c7', 'c8', 'd1', 'd2' , 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'e1', 'e2', 'e3', 'e4', 'e5', 'e6', 'e7', 'e8', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'g1', 'g2', 'g3', 'g4', 'g5', 'g6', 'g7', ':)', '1', '2', '3', '4', 'up', 'north', 'left', 'west', 'right', 'down', 'south' 'east', 'quit', 'exit', 'back','go back', 'do not enter', 'no', 'i didnt want this']
+    possible_optiions = ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8', 'c1', 'c2', 'c3','c4', 'c5', 'c6', 'c7', 'c8', 'd1', 'd2' , 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'e1', 'e2', 'e3', 'e4', 'e5', 'e6', 'e7', 'e8', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'g1', 'g2', 'g3', 'g4', 'g5', 'g6', 'g7', ':)', '1', '2', '3', '4', 'up', 'north', 'left', 'west', 'right', 'down', 'south' 'east', 'quit', 'exit', 'back', 'go back', 'do not enter', 'no', 'i didnt want this']
     in_location_selection = True
     while in_location_selection:
         option = input("> ")
@@ -1693,7 +1693,7 @@ def Player_Move(myAction):
                 destination = map_locations[player1.location][DOWN]
                 player1.location = destination
                 in_location_selection = False
-        elif option.lower() in ['quit', 'exit', 'back','go back', 'do not enter', 'no', 'i didnt want this']:
+        elif option.lower() in ['quit', 'exit', 'back', 'go back', 'do not enter', 'no', 'i didnt want this']:
             in_location_selection = False
 # examine the location and let the player choise the option to chose 'Fight'(boss or enemy)/'Puzzle'/'Back'
 def Player_Examine():

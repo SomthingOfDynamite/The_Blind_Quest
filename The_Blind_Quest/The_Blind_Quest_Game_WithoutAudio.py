@@ -1336,7 +1336,9 @@ def Player_Prompt(): # welcome, to the darasic park
                     if number == 1:
                         Funny_Encounter4()
                         player1.funny_counter += 1
-        Player_Examine()
+            Player_Examine()
+        else:
+            Player_Examine()
     elif option.lower() in ['3','status', 'stats', 'info']:
         Print_Status()
     elif option.lower() in ['4','map', 'show map', 'map', 'see map']:

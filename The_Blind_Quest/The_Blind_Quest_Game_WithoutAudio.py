@@ -4,7 +4,6 @@
 ### Imports ###
 import sys, pickle, os, time, random                # 1) used to print text slowly, 2) save and load the game(funnyest thing i've ever read), 3) clear the screen, stop code for a breef time, 4) the clue is in the name                                   
 os.system("mode con cols=148 lines=45")             # window size for the "game"
-os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"   # to hide the annoying message that pops up
 
 ZONENAME = 'name of zone'
 DESCRIPTION = 'description of zone'

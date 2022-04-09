@@ -54,7 +54,7 @@ You Can in fact:
   
   or spare most of them by acting.
 
-* fight bosses to earn EXP AND GOLD (required 6 to fight the final boss)
+* fight bosses to earn EXP AND GOLD
 
 * solve puzzles to earn GOLD (and maybe unlock somthing)
 

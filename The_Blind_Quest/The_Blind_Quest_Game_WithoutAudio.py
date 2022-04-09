@@ -1004,7 +1004,7 @@ map_locations = {
         RIGHT: '',
         HAS: 'Boss'},}
 # for easy printing of the map V
-zonenames = ['g1', 'g2', 'g3', 'g4', 'g5', 'g6', 'g7', ':)', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'e1', 'e2', 'e3', 'e4', 'e5', 'e6', 'e7', 'e8', 'd1', 'd2', 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8','b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8']
+zonenames = ['g1', 'g2', 'g3', 'g4', 'g5', 'g6', 'g7', ':)', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'e1', 'e2', 'e3', 'e4', 'e5', 'e6', 'e7', 'e8', 'd1', 'd2', 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8']
 
 ### Title screen ###
 def Title_Screen():
@@ -1280,7 +1280,7 @@ def Player_Prompt(): # welcome, to the darasic park
     while option.lower() not in acceptable_actions:
         print("Unkown action, try again.\n")
         option = input("> ")
-    if option.lower() in ['1','move', 'go', 'travel', 'walk']:      # go johhny go
+    if option.lower() in ['1', 'move', 'go', 'travel', 'walk']:      # go johhny go
         Clear_Screen()
         print("#" * 148)
         print("\n                                                             You are at:\n")
@@ -1288,7 +1288,7 @@ def Player_Prompt(): # welcome, to the darasic park
         print("\n")
         print("#" * 148)
         Player_Move(option.lower())
-    elif option.lower() in ['2','inspect', 'look', 'examine', 'stare', 'gaze', 'enter']:
+    elif option.lower() in ['2', 'inspect', 'look', 'examine', 'stare', 'gaze', 'enter']:
         if player1.location == 'a1':
             Home()
         elif player1.location == 'a8':
@@ -1339,9 +1339,9 @@ def Player_Prompt(): # welcome, to the darasic park
             Player_Examine()
         else:
             Player_Examine()
-    elif option.lower() in ['3','status', 'stats', 'info']:
+    elif option.lower() in ['3', 'status', 'stats', 'info']:
         Print_Status()
-    elif option.lower() in ['4','map', 'show map', 'map', 'see map']:
+    elif option.lower() in ['4', 'map', 'show map', 'map', 'see map']:
         Print_Map()
     elif option.lower() in ['5', 'save']:
         Clear_Screen()
@@ -1360,7 +1360,7 @@ def Player_Prompt(): # welcome, to the darasic park
         Clear_Screen()
         global ingame
         ingame = False
-    elif option.lower() in ['7','dance']:
+    elif option.lower() in ['7', 'dance']:
         Clear_Screen()
         print("#" * 148)
         print(f'um... {player1.name} started dancing')
@@ -1609,7 +1609,7 @@ def Item_Throw():
             else:
                 print("Are you sure you want to remove " + option  + "?")
                 print("(1-Yes, 2-No)\n")
-                posible_options = ['1','2', 'y', 'yes', 'n', 'no']
+                posible_options = ['1', '2', 'y', 'yes', 'n', 'no']
                 option = input("> ")
                 while option.lower() not in posible_options:
                     Clear_Screen()
@@ -1642,7 +1642,7 @@ def Player_Move(myAction):
     print("(Type the name of the location to teleport)")
     print(f"(You have {player1.tel} Teleport potions left)\n")
     print(f"(You can also select \"back\" if you do not wish to move)")
-    possible_optiions = ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8', 'c1', 'c2', 'c3','c4', 'c5', 'c6', 'c7', 'c8', 'd1', 'd2' , 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'e1', 'e2', 'e3', 'e4', 'e5', 'e6', 'e7', 'e8', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'g1', 'g2', 'g3', 'g4', 'g5', 'g6', 'g7', ':)', '1', '2', '3', '4', 'up', 'north', 'left', 'west', 'right', 'down', 'south' 'east', 'quit', 'exit', 'back', 'go back', 'do not enter', 'no', 'i didnt want this']
+    possible_optiions = ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8', 'c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8', 'd1', 'd2' , 'd3', 'd4', 'd5', 'd6', 'd7', 'd8', 'e1', 'e2', 'e3', 'e4', 'e5', 'e6', 'e7', 'e8', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'g1', 'g2', 'g3', 'g4', 'g5', 'g6', 'g7', ':)', '1', '2', '3', '4', 'up', 'north', 'left', 'west', 'right', 'down', 'south' 'east', 'quit', 'exit', 'back', 'go back', 'do not enter', 'no', 'i didnt want this']
     in_location_selection = True
     while in_location_selection:
         option = input("> ")
@@ -2199,7 +2199,7 @@ def Shop_talk(): # my potions are too strong for you
                 print("    you can finally break free")
                 print("    and finish this journey\n")
             option = input("> ")
-        elif option.lower() in ['8','quit', 'back', 'exit']:
+        elif option.lower() in ['8', 'quit', 'back', 'exit']:
             if option.lower() in ['8']:
                 if (player1.quest_counter >= 1 or player1.quest_selected == True) and player1.funny_counter >= 1:
                     print("Shopkeeper:")
@@ -2390,11 +2390,11 @@ def Quest(): # this is pointles honestly. i regret making ths part
             print("(Do you exept this quest?)")
             print("(1-Yes, 2-No)\n")
             option = input("> ")
-            possible_options = ['1', 'y', 'yes', 'ya', 'ya dude', 'yas','2', 'n', 'no', 'na', 'nope', 'na fam', 'not today', 'b', 'e', 'q', 'back', 'quit', 'exit']
+            possible_options = ['1', 'y', 'yes', 'ya', 'ya dude', 'yas', '2', 'n', 'no', 'na', 'nope', 'na fam', 'not today', 'b', 'e', 'q', 'back', 'quit', 'exit']
             while option.lower() not in possible_options:
                 print("Plese select something valid")
                 option = input("> ")
-            if option in ['1','y', 'yes', 'ya', 'ya dude', 'yas']:
+            if option in ['1', 'y', 'yes', 'ya', 'ya dude', 'yas']:
                 Clear_Screen()
                 print("#" * 148)
                 print(king_dialog + "   Well good luck, And good bye\n")
@@ -7552,18 +7552,18 @@ def Game_Over_Screen(): # you lost boo hoo, how sad :(
     Print_Dialog(to_print)
     print("Yes or No")
     option =  input("> ")
-    possible_options = ['1','yes', 'sure', 'continue', 'ya dude', 'yas', 'ok', '2','no', 'nah', 'nope', 'i wish to die', 'f']
+    possible_options = ['1', 'yes', 'sure', 'continue', 'ya dude', 'yas', 'ok', '2', 'no', 'nah', 'nope', 'i wish to die', 'f']
     while option.lower() not in possible_options:
         print("please enter a valid comand")
         option = input("> ")
-    if option.lower() in ['1','yes', 'sure', 'continue', 'ya dude', 'yas', 'ok']:
+    if option.lower() in ['1', 'yes', 'sure', 'continue', 'ya dude', 'yas', 'ok']:
         player1.hp = player1.maxhp / 2
         player1.hp = int(player1.hp)
         if player1.gold < 20:
             player1.gold = 0
         else:
             player1.gold -= 20
-    elif option.lower() in ['2','no', 'nah', 'nope', 'i wish to die', 'f']:
+    elif option.lower() in ['2', 'no', 'nah', 'nope', 'i wish to die', 'f']:
         to_print = "good bye %s :) its been fun" % (player1.name)
         Print_Dialog(to_print)
         option = input("\n> ")

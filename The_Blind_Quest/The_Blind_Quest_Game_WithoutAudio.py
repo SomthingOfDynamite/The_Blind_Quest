@@ -5862,8 +5862,6 @@ def Check_Enemy_Mode():
                 E_Dialog_Battle2()
                 skip_attack = True
         if enemy.hp <= 0:
-            with open('savefile', 'wb') as f:
-                pickle.dump(player1, f)
             if player1.enemy_times_won >= 100 or player1.job == 'NOTHING':
                 pass
             else:
@@ -7453,8 +7451,9 @@ def E_Dialog_Last():
         player1.e_save = 2
     else:
         player1.e_save = 1
-    with open('savefile', 'wb') as f:
+    with open('../The_Blind_Quest/game_files/save_file/savefile', 'wb') as f:
         pickle.dump(player1, f)
+    f.close()
 
 ### Game won ###
 # victory dialog horay

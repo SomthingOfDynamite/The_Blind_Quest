@@ -3334,7 +3334,7 @@ def Funny_Encounter3():
         Print_Dialog(to_print)
         print("\n(1-Yes / 2-No?)\n")
         option = input("> ")
-    if option.lower() in ["2", "no", "nope","nah"]:
+    if option.lower() in ["2", "no", "nope", "nah"]:
         Clear_Screen()
         print(sprite)
         print(his_name)

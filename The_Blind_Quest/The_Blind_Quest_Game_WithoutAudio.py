@@ -7616,4 +7616,4 @@ Title_Screen() # tada!
         or were you just board?
 
         I don't care if you copy the code and claim it as your own (kinda lied there)
-        and whoever is reading this. just know that I love you. Don't let anything hold you back from achieving your dreams."""
+        and whoever is reading this Don't let anything hold you back from achieving your dreams."""

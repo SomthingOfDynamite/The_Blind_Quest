@@ -26,7 +26,7 @@ How to start playing:
 * enter a your name
 
 * next choose your role:
-  (Warrior, Mage or Priest) with their own uniqche ability.
+  (Warrior, Mage or Priest) with their own unique ability.
 
 * from there you can do as you please. explore 
   and do other stuff.
@@ -82,7 +82,7 @@ by typing "god" on the role selection screen
 ###########################################################
 
 Things to note:
-* i dont recomend typing super fast.  
+* i dont recommend typing super fast.  
 
 * it is recomended to save the game offten. there is no auto saving 
   (exept at faze 3 of the final boss after beating him)

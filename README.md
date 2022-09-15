@@ -20,7 +20,7 @@ How to start playing:
   (to start the python file you download python)
 
 * start a new game :
-  (type on the keyboard "new game" or "new" or "1") 
+  (type on the keyboard "new game", "new" or "1") 
   and then press enter to proceed
 
 * enter a your name

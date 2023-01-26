@@ -8088,13 +8088,13 @@ Title_Screen() # tada!
 ### List of things to add or inprove ###
     #   add a secret spare mechanic?            done, i think
     #   add another secret boss + item?         done
-    #   add discriptions to the locations       done (could be better, but im lazy)
-    #   improve Setup_Game()                    nah
-    #   improve the quest selection screen?     no
-    #   improve Garage()                        i wish
-    #   improve end credits                     cant be bothered
-    #   do this                                 k boss, not sure what that means
-    #   i blame you for not doing anything      yeah, i blame myself
+    #   add discriptions to the locations       done (could be better, but i think its good now)
+    #   improve Setup_Game()                    done
+    #   improve the quest selection screen?     no need
+    #   improve Garage()                        done
+    #   improve end credits                     i think they look good already
+    #   do this                                 not sure what that means anymore
+    #   do that                                 do... what now?
 
 # my note
 """
@@ -8114,6 +8114,8 @@ Title_Screen() # tada!
         did you want more from it?
         Have you learned anything about how to keep the refrigerator running?
         or were you just board?
-
-        I don't care if you copy the code and claim it as your own (kinda lied there)
+        
+        either way, i dont really have anything say. hope you had fun
+        
+        I don't care if you copy the code and claim it as your own (kinda lied there, i do)
         and whoever is reading this. Don't let anything hold you back from achieving your dreams."""
